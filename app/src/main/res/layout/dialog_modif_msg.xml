@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parentView"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/NoActionBar"
+    android:background="@color/red_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+
+        <TextView
+            style="@style/text_black"
+            android:text="Modifikasi Pesan"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_modif_message"
+            style="@style/text_black"
+            android:lines="4"
+            android:hint="Masukkan pesan palsu"
+            android:padding="4dp"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:background="@drawable/white_input"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:text="Bersihkan"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:text="Batal"/>
+
+            <Button
+                android:id="@+id/btn_verify"
+                style="@style/button_red"
+                android:layout_width="wrap_content"
+                android:text="Verifikasi"
+                android:layout_marginLeft="60dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

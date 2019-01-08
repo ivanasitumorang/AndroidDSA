@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parentView"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/NoActionBar"
+    android:background="@color/red_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:id="@+id/tv_ver_status"
+            style="@style/text_black"
+            android:text="Proses Generate"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/text_black"
+            android:text="1. Membuat pesan\nIsi pesan :"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_message"
+            style="@style/text_black"
+            android:lines="4"
+            android:padding="4dp"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:background="@drawable/white_input"/>
+
+        <TextView
+            style="@style/text_black"
+            android:text="2. Generate Kunci"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            style="@style/text_black"
+            android:text="3. Membuat signature dari pesan\nIsi signature :"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tv_signature"
+            style="@style/text_black"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/white_input"
+            android:padding="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_retry"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:text="Ulangi"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/button_red"
+                android:layout_width="wrap_content"
+                android:text="Simpan"
+                android:layout_marginLeft="60dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

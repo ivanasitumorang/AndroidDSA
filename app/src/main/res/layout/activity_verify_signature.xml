@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifySignatureActivity"
+    android:background="@color/red_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="56dp"
+        android:layout_marginLeft="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black"
+                android:textAlignment="center"
+                android:text="*Kemungkinan besar verifikasi berhasil"
+                android:textStyle="italic"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/btn_ver_message"
+                style="@style/button_red"
+                android:text="Verifikasi Pesan"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/text_black"
+                android:textAlignment="center"
+                android:text="*Kemungkinan besar verifikasi gagal"
+                android:textStyle="italic"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/btn_modif_message"
+                style="@style/button_red"
+                android:text="Modifikasi &amp; Verifikasi Pesan"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_msg_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/text_black"
+                android:textStyle="italic"
+                android:text="Isi pesan : "/>
+
+            <EditText
+                android:id="@+id/et_ver_message"
+                style="@style/text_black"
+                android:lines="8"
+                android:gravity="start"
+                android:scrollbars="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
